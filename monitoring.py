@@ -32,7 +32,7 @@ if not gemini_api_key:
 
 genai.configure(api_key=gemini_api_key)
 
-model = genai.GenerativeModel(model_name="gemini-1.5-flash")
+model = genai.GenerativeModel(model_name="gemini-2.5-flash")
 
 def get_ssh_attempts():
     result = subprocess.check_output("grep 'Failed password' /var/log/auth.log | tail -n 10", shell=True)
